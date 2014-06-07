@@ -5,7 +5,9 @@ Códigos-fonte em Java e Python dos problemas resolvidos em aula na disciplina d
 
 Nesse repositório, encontram-se os códigos-fonte exemplos dado em aulas e os códigos base para os exercícios de cada tópico. A resposta dos exercícios serão publicadas após uma semana do início da atividade. Inicialmente serão fornecidos os códigos na linguagem Java e Python.
 
-As pastas com os exemplos de aula serão nomeadas AULA_XX, onde XX é o número da semana em que a aula ocorreu e as pastas com os exercícios serão nomeadas EX_YY, onde YY é o número da semana em que os exercícios foram propostos. O nome dos códigos terão o seguinte formato: NOMEPROBLEMA_X.java, onde NOMEPROBLEMA é o nome do problema resolvido e X é uma "flag" indicando a dificuldade do problema, podendo ser F (fácil), N (normal), A (avançado).
+As pastas com os exemplos de aula serão nomeadas AULA_XX, onde XX é o número da semana em que a aula ocorreu e cada pasta terá um arquivo README.md com um breve resumo e a lista de exercícios. Para cada exercício será dada uma descrição básica e o nível de dificuldade.
+
+A resposta de alguns exercícios selecionados serão disponibilizados uma semana após a aula.
 
 O código-fonte dos exercícios avançados estarão abertos para edição dos alunos como uma forma de encontrarem a solução colaborativamente. Ao final, o professor fará as alterações necessárias.
 
@@ -27,6 +29,4 @@ Links interessantes
 ===================
 
 http://rs.io/2014/05/29/list-of-data-sets.html
-=======
-Códigos-fonte em Java e Python dos problemas resolvidos em aula na disciplina de Processamento de Informação da Universidade Federal do ABC
 
