@@ -1,7 +1,6 @@
 PI-UFABC
 ========
 
-<<<<<<< HEAD
 Códigos-fonte em Java e Python dos problemas resolvidos em aula na disciplina de Processamento de Informação da Universidade Federal do ABC.
 
 Nesse repositório, encontram-se os códigos-fonte exemplos dado em aulas e os códigos base para os exercícios de cada tópico. A resposta dos exercícios serão publicadas após uma semana do início da atividade. Inicialmente serão fornecidos os códigos na linguagem Java e Python.
@@ -30,4 +29,4 @@ Links interessantes
 http://rs.io/2014/05/29/list-of-data-sets.html
 =======
 Códigos-fonte em Java e Python dos problemas resolvidos em aula na disciplina de Processamento de Informação da Universidade Federal do ABC
->>>>>>> abf9b808d3bacc18d8777e7244216924f13d13b4
+
