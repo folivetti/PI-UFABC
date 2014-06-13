@@ -1,81 +1,59 @@
 AULA 01
 ========
 
-Nessa primeira aula aprendemos o conceito de variáveis, tipos e operadores.
+Nessa aula aprendemos a trabalhar com listas (array) em Java.
 
-A estrutura básica de um programa JAVA é:
+Para declarar uma lista utilizamos a seguinte sintaxe:
 
 ```java
-class NOMEPROGRAMA{
-  public static void main(String[] args){
-    // algoritmo
-  }
+tipo [] lista = new tipo [tamanho];
+```
+
+Sendo tipo qualquer um dos tipos já aprendidos até então. Muitas vezes é interessante trabalhar com listas grandes, e portanto, a entrada diretamente do usuário não é conveniente. Para ler uma lista diretamente de um arquivo texto, convencionamos que a primeira linha do arquivo conterá o tamanho da lista e a segunda linha os elementos da lista separados por ";".
+
+Para ler o arquivo usamos:
+
+```java
+import java.io.File;
+import java.util.Scanner;
+import java.io.FileNotFoundException;
+
+class leitor{
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner leitor = new Scanner(new File("lista.csv")); 
+	  leitor.useDelimiter("\\s*;\\s*|\\r?\\n"); 
+	  
+		int tamanho = leitor.nextInt();
+		double [] x = new double[tamanho];
+		for( int i=0; i<tamanho; i++ ){
+			x[i] = leitor.nextDouble();
+		}
+		leitor.close();
+	}
 }
 ```
 
-Os tipos de variáveis que aprendemos até então:
-
-byte, short, int, long - tipos de números inteiros
-float, double - tipos de números fracionários
-
-Idealmente utilizamos os tipos com maior uso de memória, e maior precisão. Caso o uso de memória seja crítico, podemos escolher um tipo que ocupe um menor espaço.
-Toda variável a ser utilizada deve ser declarada para o computador saber que iremos utilizá-la:
-
-```java
-int x, y, media; // declara três variáveis a serem utilizadas
-```
-
-Nativamente temos diversos operadores matemáticos para utilizarmos: +, -, *, /, %.
-
-Os operadores são avaliados na seguinte ordem:
-
-1. *, /, %
-2. +,-
-3. da esquerda para a direita
-
-ENTRADA E SAÍDA
------------------
-
-A entrada de dados é feita utilizando o Scanner. Antes da declaração do nome do programa devemos avisar ao JAVA que iremos utilizá-lo:
-
-```java
-import java.util.Scanner;
-```
-
-Dentro da área do código do programa, devemos declarar uma variável para o uso do Scanner:
-
-```java
-Scanner leitor = new Scanner(System.in);
-```
-
-Finalmente, pegamos os dados através do comando leitor.nextXXX() onde XXX é o tipo da variável que vai receber os dados:
-
-```java
-float x;
-x = leitor.nextFloat();
-```
-
-A saída de dados é feita através do comando System.out.println():
-
-```java
-System.out.println("O valor de x é: " + x);
-```
+Atividade em aula
+------------------
+Dado uma lista numérica ordenada, encontrar um elemento usando o menor número possível de passos.
 
 Exercícios
 -----------
 
-### 01 - Equação de Segundo Grau (Fácil)
-Complete o código SegundoGrau.java para calcular as respostas da equação ax^2 + bx + c = 0.
+### 01 - Soma e Produto (Fácil)
+Complete o código SomaProduto.java para ler uma lista de valores e calcular a somatória e produtória dessa lista.
 
-### 02 - Média Ponderada (Fácil)
-Complete o código MediaPonderada.java para calcular a média ponderada entre dois valores x e y, ponderados pela variável w, sendo que 0 <= w <= 1.
-Você consegue detectar um possível erro no seu código gerado pelo usuário?
+### 02 - Embaralhando a lista (Shuffle) (Intermediário)
+Complete o código Shuffle.java embaralhar os elementos da lista utlizando o procedimento descrito em aula.
 
-### 03 - Conversão de Temperatura (Fácil)
-Complete o código Temperatura.java para converter a temperatura em Celsius para Kelvin e Fahrenheit.
+### 03 - Ordenação (Intermediário)
+Complete o código Ordena.java para ordenar uma lista numérica utilizando procedimento descrito em aula.
 
-### 04 - Idade em Segundos (Fácil)
-Complete o código IdadeSegundos.java para converter a idade de uma pessoa em anos para segundos. Comente se o seu código retorna um valor preciso. Em caso negativo, crie soluções para melhorar essa precisão.
+### 04 - Operação elemento-a-elemento (Fácil)
+Dadas duas listas numéricas, complete o código ProdutoVetores.java para realizar a operação de multiplicação elemento a elemento gerando uma nova lista com resultado.
 
-### 05 - Área e Volume das Formas (Fácil)
-Complete o código AreaFormas.java para calcular a área e volume das seguintes formas: retângulo, circunferência, triângulo, cubóide, esfera, pirâmide.
+### 05 - Combinações (Avançado)
+Complete o código Combinacao.java para imprimir todas as combinações de tamanho m dos números de 0 até n-1 em ordem crescente.
+
+### 06 - Bois e Vacas (Avançado)
+Complete o código BoisVacas.java para implementar o jogo Bois e Vacas (Mastermind) de adivinhação.
