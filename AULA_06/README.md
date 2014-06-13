@@ -1,81 +1,48 @@
-AULA 01
+AULA 06
 ========
 
-Nessa primeira aula aprendemos o conceito de variáveis, tipos e operadores.
+Nessa aula aprendemos a trabalhar com o tipo String (texto) em Java.
 
-A estrutura básica de um programa JAVA é:
-
-```java
-class NOMEPROGRAMA{
-  public static void main(String[] args){
-    // algoritmo
-  }
-}
-```
-
-Os tipos de variáveis que aprendemos até então:
-
-byte, short, int, long - tipos de números inteiros
-float, double - tipos de números fracionários
-
-Idealmente utilizamos os tipos com maior uso de memória, e maior precisão. Caso o uso de memória seja crítico, podemos escolher um tipo que ocupe um menor espaço.
-Toda variável a ser utilizada deve ser declarada para o computador saber que iremos utilizá-la:
+O tipo String tem diversas operações diferentes dos tipos numéricos:
 
 ```java
-int x, y, media; // declara três variáveis a serem utilizadas
+String s = "Testando";
+int n = s.length(); // tamanho de s
+char c = s.charAt(0); // 'T', símbolo na posição 0
+
+String s2 = "123";
+s = s + s2; // concatena string: s == "Testando123"
+
+n = Int.valueOf(s2).intValue(); // retorna 123 no tipo int
+s = s + 456; // converte automaticamente 456 em String e concatena
+
+String ss = s.substring(0,3); // ss == "Tes", retorna o pedaço da String entre 0 e 2
+String su = s.toUpperCase(); // TESTANDO123456
+String sl = s.toLowerCase(); // testando123456
+
+String [] listaS = "Teste 123".split(" "); // ["Teste", "123"]
+
+boolean b = ss.equals("Tes")==0;  // true
+
+char [] c = {'t','e','s','t','e'};
+s = String(c); // s == "teste"
 ```
 
-Nativamente temos diversos operadores matemáticos para utilizarmos: +, -, *, /, %.
-
-Os operadores são avaliados na seguinte ordem:
-
-1. *, /, %
-2. +,-
-3. da esquerda para a direita
-
-ENTRADA E SAÍDA
------------------
-
-A entrada de dados é feita utilizando o Scanner. Antes da declaração do nome do programa devemos avisar ao JAVA que iremos utilizá-lo:
-
-```java
-import java.util.Scanner;
-```
-
-Dentro da área do código do programa, devemos declarar uma variável para o uso do Scanner:
-
-```java
-Scanner leitor = new Scanner(System.in);
-```
-
-Finalmente, pegamos os dados através do comando leitor.nextXXX() onde XXX é o tipo da variável que vai receber os dados:
-
-```java
-float x;
-x = leitor.nextFloat();
-```
-
-A saída de dados é feita através do comando System.out.println():
-
-```java
-System.out.println("O valor de x é: " + x);
-```
+Atividade em aula
+------------------
+Criptografar uma frase utilizando a Cifra de César.
 
 Exercícios
 -----------
 
-### 01 - Equação de Segundo Grau (Fácil)
-Complete o código SegundoGrau.java para calcular as respostas da equação ax^2 + bx + c = 0.
+### 01 - Binário para Decimal (Fácil)
+Complete o código Bin2Dec.java para converter uma String contendo um número binário em seu equivalente decimal.
 
-### 02 - Média Ponderada (Fácil)
-Complete o código MediaPonderada.java para calcular a média ponderada entre dois valores x e y, ponderados pela variável w, sendo que 0 <= w <= 1.
-Você consegue detectar um possível erro no seu código gerado pelo usuário?
+### 02 - Numeração Romana (Avançado)
+Complete o código Roman.java para converter um número decimal em romano e vice-versa.
 
-### 03 - Conversão de Temperatura (Fácil)
-Complete o código Temperatura.java para converter a temperatura em Celsius para Kelvin e Fahrenheit.
+### 03 - Anagrama (Intermediário)
+Complete o código Anagrama.java para determinar se uma String s1 é anagrama da String s2.
 
-### 04 - Idade em Segundos (Fácil)
-Complete o código IdadeSegundos.java para converter a idade de uma pessoa em anos para segundos. Comente se o seu código retorna um valor preciso. Em caso negativo, crie soluções para melhorar essa precisão.
-
-### 05 - Área e Volume das Formas (Fácil)
-Complete o código AreaFormas.java para calcular a área e volume das seguintes formas: retângulo, circunferência, triângulo, cubóide, esfera, pirâmide.
+### 04 - A Velha a Fiar (Intermediário)
+Complete o código VelhaFiar.java para imprimir a letra da música A Velha a Fiar utilizando o menor número de linhas de código possível, tirando proveito da estrutura de repetição da música.
