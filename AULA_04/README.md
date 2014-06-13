@@ -1,81 +1,53 @@
-AULA 01
+AULA 04
 ========
 
-Nessa primeira aula aprendemos o conceito de variáveis, tipos e operadores.
-
-A estrutura básica de um programa JAVA é:
+Nessa aula aprendemos outra estrutura de repetição:
 
 ```java
-class NOMEPROGRAMA{
-  public static void main(String[] args){
-    // algoritmo
-  }
+while( condição ){
+    // repete instruções enquanto condição for verdadeira
 }
 ```
 
-Os tipos de variáveis que aprendemos até então:
+Atividade em Aula
+------------------
+Multiplicação Etíope: descreve a operação de multiplicação de dois inteiros, x e y, utilizando apenas multiplicação e divisão por 2 e soma.
+Escreva os dois números lado a lado em uma tabela:
 
-byte, short, int, long - tipos de números inteiros
-float, double - tipos de números fracionários
+| x  | y  |
+| -- |:--:|
 
-Idealmente utilizamos os tipos com maior uso de memória, e maior precisão. Caso o uso de memória seja crítico, podemos escolher um tipo que ocupe um menor espaço.
-Toda variável a ser utilizada deve ser declarada para o computador saber que iremos utilizá-la:
+Na coluna de x, divida-o sucessivamente até obter 0, na coluna de y dobre o valor sucessivamente:
 
-```java
-int x, y, media; // declara três variáveis a serem utilizadas
-```
+| x  | y  |
+| -- |:--:|
+| x/2| y*2|
+| x/4| y*4|
+...
+| 0  |y*2^n|
 
-Nativamente temos diversos operadores matemáticos para utilizarmos: +, -, *, /, %.
-
-Os operadores são avaliados na seguinte ordem:
-
-1. *, /, %
-2. +,-
-3. da esquerda para a direita
-
-ENTRADA E SAÍDA
------------------
-
-A entrada de dados é feita utilizando o Scanner. Antes da declaração do nome do programa devemos avisar ao JAVA que iremos utilizá-lo:
-
-```java
-import java.util.Scanner;
-```
-
-Dentro da área do código do programa, devemos declarar uma variável para o uso do Scanner:
-
-```java
-Scanner leitor = new Scanner(System.in);
-```
-
-Finalmente, pegamos os dados através do comando leitor.nextXXX() onde XXX é o tipo da variável que vai receber os dados:
-
-```java
-float x;
-x = leitor.nextFloat();
-```
-
-A saída de dados é feita através do comando System.out.println():
-
-```java
-System.out.println("O valor de x é: " + x);
-```
+Some os valores da coluna y, para todos os elementos da coluna x que é um número ímpar.
 
 Exercícios
 -----------
 
-### 01 - Equação de Segundo Grau (Fácil)
-Complete o código SegundoGrau.java para calcular as respostas da equação ax^2 + bx + c = 0.
+### 01 - Pedra, Papel, Tesoura (Fácil)
+Complete o código PedraPapelTesoura.java para repetir a competição até que o usuário entre com um valor inválido.
 
-### 02 - Média Ponderada (Fácil)
-Complete o código MediaPonderada.java para calcular a média ponderada entre dois valores x e y, ponderados pela variável w, sendo que 0 <= w <= 1.
-Você consegue detectar um possível erro no seu código gerado pelo usuário?
+### 02 - Monte Carlo II (Fácil)
+Complete o código MonteCarlo.java estimar o valor de pi até que a diferença do valor estimado e o valor real de pi seja menor que um valor **p** definido pelo usuário. Use Math.PI para obter o valor real (ou quase) de pi.
 
-### 03 - Conversão de Temperatura (Fácil)
-Complete o código Temperatura.java para converter a temperatura em Celsius para Kelvin e Fahrenheit.
+### 03 - Palíndromo (Intermediário)
+Complete o código Palindromo.java determinar se um número é palíndromo.
 
-### 04 - Idade em Segundos (Fácil)
-Complete o código IdadeSegundos.java para converter a idade de uma pessoa em anos para segundos. Comente se o seu código retorna um valor preciso. Em caso negativo, crie soluções para melhorar essa precisão.
+### 04 - Monty Hall (Intermediário)
+Complete o código Montyhall.java para fazer uma simulação de Monte Carlo para verificar a validade do paradoxo de Monty Hall.
 
-### 05 - Área e Volume das Formas (Fácil)
-Complete o código AreaFormas.java para calcular a área e volume das seguintes formas: retângulo, circunferência, triângulo, cubóide, esfera, pirâmide.
+### 05 - Persistência Aditiva (Intermediário)
+Complete o código PersistenciaAditiva.java para calcular a persistência aditiva de um número.
+
+### 06 - Divisão de Dígitos (Avançado)
+Complete o código DivideDigitos.java para encontrar o menor valor **d** de separação de segmentos de um número de forma que gere uma lista de números crescentes.
+
+### 07 - Cartão de Crédito (Avançado)
+Comeplte o código CartaoCredito.java para determinar se um número digitado pelo usuário é válido seguindo os critérios dados em aula.
