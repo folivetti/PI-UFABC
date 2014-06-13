@@ -1,81 +1,48 @@
-AULA 01
+AULA 02
 ========
 
-Nessa primeira aula aprendemos o conceito de variáveis, tipos e operadores.
+Nessa aula aprendemos o conceito de estruturas de decisão ou condicionais.
 
-A estrutura básica de um programa JAVA é:
+Uma estrutura de decisão do JAVA é o **if**:
 
 ```java
-class NOMEPROGRAMA{
-  public static void main(String[] args){
-    // algoritmo
-  }
+if( condição ) {
+    // condição verdadeira
+}else if( condição_2 ) {
+   // senão, se a condição 2 for verdadeira
+}else{
+  // senão faça outra coisa
 }
 ```
 
-Os tipos de variáveis que aprendemos até então:
+A variável condição deve ser do tipo **boolean* que pode conter os valores **true** (verdadeiro) e **false** (falso).
 
-byte, short, int, long - tipos de números inteiros
-float, double - tipos de números fracionários
-
-Idealmente utilizamos os tipos com maior uso de memória, e maior precisão. Caso o uso de memória seja crítico, podemos escolher um tipo que ocupe um menor espaço.
-Toda variável a ser utilizada deve ser declarada para o computador saber que iremos utilizá-la:
-
-```java
-int x, y, media; // declara três variáveis a serem utilizadas
-```
-
-Nativamente temos diversos operadores matemáticos para utilizarmos: +, -, *, /, %.
-
-Os operadores são avaliados na seguinte ordem:
-
-1. *, /, %
-2. +,-
-3. da esquerda para a direita
-
-ENTRADA E SAÍDA
+Atividade em aula:
 -----------------
 
-A entrada de dados é feita utilizando o Scanner. Antes da declaração do nome do programa devemos avisar ao JAVA que iremos utilizá-lo:
+Dados 4 valores: w, x, y, z, imprimí-los em ordem crescente.
 
-```java
-import java.util.Scanner;
-```
-
-Dentro da área do código do programa, devemos declarar uma variável para o uso do Scanner:
-
-```java
-Scanner leitor = new Scanner(System.in);
-```
-
-Finalmente, pegamos os dados através do comando leitor.nextXXX() onde XXX é o tipo da variável que vai receber os dados:
-
-```java
-float x;
-x = leitor.nextFloat();
-```
-
-A saída de dados é feita através do comando System.out.println():
-
-```java
-System.out.println("O valor de x é: " + x);
-```
 
 Exercícios
 -----------
 
-### 01 - Equação de Segundo Grau (Fácil)
-Complete o código SegundoGrau.java para calcular as respostas da equação ax^2 + bx + c = 0.
+### 01 - Cara ou coroa (Fácil)
+Complete o código CaraCoroa.java para capturar a escolha do usuário (cara = 0, coroa = 1), sortear um valor entre 0 e 1 e, mostrar o resultado do jogo (assuma valores <0.5 como cara, e >=0.5 como coroa).
 
-### 02 - Média Ponderada (Fácil)
-Complete o código MediaPonderada.java para calcular a média ponderada entre dois valores x e y, ponderados pela variável w, sendo que 0 <= w <= 1.
-Você consegue detectar um possível erro no seu código gerado pelo usuário?
+### 02 - Peso Ideal (Fácil)
+Complete o código PesoIdeal.java para obter do usuário se ele é Homem (0) ou Mulher (1), o peso dele e a altura. Com essa informação, avisá-lo se ele estiver acima do peso.
 
-### 03 - Conversão de Temperatura (Fácil)
-Complete o código Temperatura.java para converter a temperatura em Celsius para Kelvin e Fahrenheit.
+### 03 - Ponto na circunferência (Fácil)
+Complete o código Circunferencia.java para, dado as coordenadas (cx, cy) do centro de uma circunferência, seu raio r e as coordenadas (x,y) de um ponto, verificar se esse ponto está dentro da circunferência.
 
-### 04 - Idade em Segundos (Fácil)
-Complete o código IdadeSegundos.java para converter a idade de uma pessoa em anos para segundos. Comente se o seu código retorna um valor preciso. Em caso negativo, crie soluções para melhorar essa precisão.
+### 04 - Estrela da Morte (Intermediário)
+Complete o código DeathStar.java verificar se duas circunferências definidas por (cx1, cy1, r1) e (cx2, cy2, r2) formam uma Estrela da Morte.
 
-### 05 - Área e Volume das Formas (Fácil)
-Complete o código AreaFormas.java para calcular a área e volume das seguintes formas: retângulo, circunferência, triângulo, cubóide, esfera, pirâmide.
+### 05 - Nota e Conceito da Média (Intermediário)
+Complete o código NotaConceitoP.java para dadas as notas da P1 e da P2, o limiar para aprovação, limiar de faltas e número de faltas, calcular a média das provas e exibir o conceito.
+
+### 06 - Calculadora (Intermediário)
+Complete o código Calculadora.java para, dados dois operandos x, y e um operador op, realizar a operação aritmética correspondente. Utilize o tipo char para o operador conforme descrito no código.
+
+### 07 - Equação do Segundo Grau (Intermediário)
+Complete o código EquacaoSegundoGrau.java para calcular a solução da equação ax^2 + bx + c = 0 mesmo quando temos raízes complexas.
