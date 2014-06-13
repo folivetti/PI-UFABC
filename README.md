@@ -14,19 +14,33 @@ O código-fonte dos exercícios avançados estarão abertos para edição dos al
 Ementa do curso
 ===============
 
-- [ ] Semana 01: Introdução, variáveis e operações lógicas e aritméticas.
-- [ ] Semana 02: Instruções Condicionais.
-- [ ] Semana 03: Processos Iterativos.
-- [ ] Semana 04: Listas e Vetores.
-- [ ] Semana 05: Matrizes.
-- [ ] Semana 06: Funções e Subrotinas.
-- [ ] Semana 07: Algoritmos Essenciais I.
-- [ ] Semana 08: Algoritmos Essenciais II.
+- [ ] Aula 01: Introdução, variáveis e operações lógicas e aritméticas.
+- [ ] Aula 02: Instruções Condicionais.
+- [ ] Aula 03: Processos Iterativos I.
+- [ ] Aula 04: Processos Iterativos II.
+- [ ] Aula 05: Listas e Vetores.
+- [ ] Aula 06: Strings.
+- [ ] Aula 07: Matrizes.
+- [ ] Aula 08: Funções e Subrotinas.
+- [ ] Aula 09: Mario AI.
+- [ ] Aula 10: Gerador de Lero Lero.
+- [ ] Aula 11: Solução de Problemas.
 
 Boa aula! :bowtie:
 
-Links interessantes
+Sites com problemas e ideias de projeto
 ===================
 
 http://rs.io/2014/05/29/list-of-data-sets.html
+
 http://projecteuler.net/problems
+
+https://github.com/karan/Projects
+
+http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/
+
+http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/
+
+http://codeboom.wordpress.com/2012/07/30/10-mini-programming-projects/
+
+https://wiki.installgentoo.com/images/5/5c/Programming-Projects-for-N00bz.jpg
