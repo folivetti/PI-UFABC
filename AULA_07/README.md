@@ -1,81 +1,47 @@
-AULA 01
+AULA 07
 ========
 
-Nessa primeira aula aprendemos o conceito de variáveis, tipos e operadores.
+Nessa aula aprendemos a trabalhar com listas bidimensionais e matrizes (arrays bidimensionais).
 
-A estrutura básica de um programa JAVA é:
+As listas bidimensionais podem ser declaradas da seguinte maneira:
 
 ```java
-class NOMEPROGRAMA{
-  public static void main(String[] args){
-    // algoritmo
+tipo [][] matriz = new tipo [dim1][dim2];
+```
+
+Com a quantidade de informação processada, agora é conveniente escrever os resultados em um arquivo. Em Java fazemos isso da seguinte forma:
+
+```java
+import java.io.File;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.Random;
+import java.io.FileNotFoundException;
+
+class ProdMatriz{
+	public static void main(String[] args) throws FileNotFoundException {
+
+    saida = new PrintWriter(“nomeArquivo");
+    saida.print(“”);
+    saida.println(“”);
+    saida.close();
   }
 }
+
 ```
 
-Os tipos de variáveis que aprendemos até então:
-
-byte, short, int, long - tipos de números inteiros
-float, double - tipos de números fracionários
-
-Idealmente utilizamos os tipos com maior uso de memória, e maior precisão. Caso o uso de memória seja crítico, podemos escolher um tipo que ocupe um menor espaço.
-Toda variável a ser utilizada deve ser declarada para o computador saber que iremos utilizá-la:
-
-```java
-int x, y, media; // declara três variáveis a serem utilizadas
-```
-
-Nativamente temos diversos operadores matemáticos para utilizarmos: +, -, *, /, %.
-
-Os operadores são avaliados na seguinte ordem:
-
-1. *, /, %
-2. +,-
-3. da esquerda para a direita
-
-ENTRADA E SAÍDA
------------------
-
-A entrada de dados é feita utilizando o Scanner. Antes da declaração do nome do programa devemos avisar ao JAVA que iremos utilizá-lo:
-
-```java
-import java.util.Scanner;
-```
-
-Dentro da área do código do programa, devemos declarar uma variável para o uso do Scanner:
-
-```java
-Scanner leitor = new Scanner(System.in);
-```
-
-Finalmente, pegamos os dados através do comando leitor.nextXXX() onde XXX é o tipo da variável que vai receber os dados:
-
-```java
-float x;
-x = leitor.nextFloat();
-```
-
-A saída de dados é feita através do comando System.out.println():
-
-```java
-System.out.println("O valor de x é: " + x);
-```
+Atividade em aula
+------------------
+Construir a simulação de um incêndio em uma floresta seguindo o modelo de percolação e ponto crítico visto em Comunicação e Redes.
 
 Exercícios
 -----------
 
-### 01 - Equação de Segundo Grau (Fácil)
-Complete o código SegundoGrau.java para calcular as respostas da equação ax^2 + bx + c = 0.
+### 01 - Incêndio na Floresta (Avançado)
+Complete o código Floresta.java para simular um incêndio e determinar a porncetagem de árvores salvas. Gere a floresta seguindo uma densidade determinada pelo usuário. Com qual densidade a floresta passa a quase não-afetada para completamente queimada?
 
-### 02 - Média Ponderada (Fácil)
-Complete o código MediaPonderada.java para calcular a média ponderada entre dois valores x e y, ponderados pela variável w, sendo que 0 <= w <= 1.
-Você consegue detectar um possível erro no seu código gerado pelo usuário?
+### 02 - Jogo da Vida (Intermediário)
+Complete o código JogoVida.java para simular o Jogo da Vida conforme regras mostradas em aula.
 
-### 03 - Conversão de Temperatura (Fácil)
-Complete o código Temperatura.java para converter a temperatura em Celsius para Kelvin e Fahrenheit.
-
-### 04 - Idade em Segundos (Fácil)
-Complete o código IdadeSegundos.java para converter a idade de uma pessoa em anos para segundos. Comente se o seu código retorna um valor preciso. Em caso negativo, crie soluções para melhorar essa precisão.
-
-### 05 - Área e Volume das Formas (Fácil)
-Complete o código AreaFormas.java para calcular a área e volume das seguintes formas: retângulo, circunferência, triângulo, cubóide, esfera, pirâmide.
+### 03 - Multiplicação de Matrizes (Avançado)
+Complete o código ProdMatriz.java para ler duas matrizes de arquivos distintos, A e B, e escrever a matriz C = A*B em um arquivo de saída.
