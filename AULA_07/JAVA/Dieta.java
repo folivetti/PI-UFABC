@@ -1,10 +1,8 @@
 /* Dieta.java
  * Leitura de uma matriz e
- * soma de duas matrizes, 
- * transposta delas
- * produto externo de dois vetores
- * Entrada: int [][] A, B, int []  x, y
- * Saída: double [][] C 
+ * fazer operações na tabela de calorias
+ * Entrada: int [][] A
+ * Saída: estatísticas 
  * Autor: Fabrício Olivetti de França
  */
 

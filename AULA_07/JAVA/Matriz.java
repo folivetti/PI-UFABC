@@ -72,16 +72,16 @@ class Matriz{
 					C[i][j] = A[i][j] + B[i][j];
 				}
 			}
-		}
-		PrintWriter saida = new PrintWriter("somaMatriz.csv"); // vamos gravar em um arquivo!
-		saida.println(n1+";"+m1);
-		for( int i=0; i<n1;i++ ){
-			for( int j=0; j<m1-1; j++ ){
-				saida.print(C[i][j]+";");
+			PrintWriter saida = new PrintWriter("somaMatriz.csv"); // vamos gravar em um arquivo!
+			saida.println(n1+";"+m1);
+			for( int i=0; i<n1;i++ ){
+				for( int j=0; j<m1-1; j++ ){
+					saida.print(C[i][j]+";");
+				}
+				saida.println(C[i][m1-1]);
 			}
-			saida.println(C[i][m1-1]);
+			saida.close();
 		}
-		saida.close();
 
 		// Transposta de A
 		int [][] T = new int [m1][n1]; // dimensões invertidas de A

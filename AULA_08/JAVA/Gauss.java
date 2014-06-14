@@ -1,9 +1,6 @@
 /* Gauss.java
- * Implementar o jogo Bois e Vacas
- * (Cows and Bulls) também conhecido
- * como Mastermind.
- * Entrada: n (int) número de 4 dígitos 
- * Saída: nBois, nVacas (int)
+ * Usar eliminação de Gauss para
+ * encontrar a solução de Ax = b
  *
  * Autor: Fabrício Olivetti de França
  * Disciplina Processamento da Informação
