@@ -23,7 +23,7 @@ Ementa do curso
 - [ ] Aula 07: Matrizes.
 - [ ] Aula 08: Funções e Subrotinas.
 - [ ] Aula 09: Mario AI.
-- [ ] Aula 10: Gerador de Lero Lero.
+- [ ] Aula 10: Gerador de Tweets.
 - [ ] Aula 11: Solução de Problemas.
 
 Boa aula! :bowtie:
