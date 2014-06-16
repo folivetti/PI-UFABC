@@ -17,6 +17,13 @@ import java.util.ArrayList;
 
 class Zebra{
 
+	public static String [] Casa = {"UM", "DOIS", "TRES", "QUATRO", "CINCO"};
+	public static String [] Cor = {"VERMELHO", "VERDE", "BRANCO", "AZUL", "AMARELO"};
+	public static String [] Nacionalidade = {"BRASILEIRO", "ARGENTINO", "CHILENO", "PERUANO", "CUBANO"};
+	public static String [] Bebida = {"CHA", "CAFE", "LEITE", "CERVEJA", "AGUA"};
+	public static String [] Comida = {"PIZZA", "FRUTA", "CARNE", "LEGUMES", "DOCES"};
+	public static String [] Animal = {"CACHORRO", "GATO", "PASSARO", "CAVALO", "ZEBRA"};	
+
 
 	// vamos buscar o índice que encontramos a string x na lista
 	public static int buscaLista( String [] Lista, String x ){
@@ -24,14 +31,6 @@ class Zebra{
 
 	// modela todas as dicas que temos em forma de condições/restrições
 	public static boolean Possivel( int [] num, int [] cor, int [] bebida, int [] comida, int [] animal ){
-		String [] Casa = {"UM", "DOIS", "TRES", "QUATRO", "CINCO"};
-		String [] Cor = {"VERMELHO", "VERDE", "BRANCO", "AZUL", "AMARELO"};
-		String [] Nacionalidade = {"BRASILEIRO", "ARGENTINO", "CHILENO", "PERUANO", "CUBANO"};
-		String [] Bebida = {"CHA", "CAFE", "LEITE", "CERVEJA", "AGUA"};
-		String [] Comida = {"PIZZA", "FRUTA", "CARNE", "LEGUMES", "DOCES"};
-		String [] Animal = {"CACHORRO", "GATO", "PASSARO", "CAVALO", "ZEBRA"};	
-
-
 	}
 
 	// gera todas as permutações
@@ -63,13 +62,6 @@ class Zebra{
 
 
 	public static void main(String[] args)  {
-
-		String [] Casa = {"UM", "DOIS", "TRES", "QUATRO", "CINCO"};
-		String [] Cor = {"VERMELHO", "VERDE", "BRANCO", "AZUL", "AMARELO"};
-		String [] Nacionalidade = {"BRASILEIRO", "ARGENTINO", "CHILENO", "PERUANO", "CUBANO"};
-		String [] Bebida = {"CHA", "CAFE", "LEITE", "CERVEJA", "AGUA"};
-		String [] Comida = {"PIZZA", "FRUTA", "CARNE", "LEGUMES", "DOCES"};
-		String [] Animal = {"CACHORRO", "GATO", "PASSARO", "CAVALO", "ZEBRA"};	
 
 		int [][] permutacoes = new int [120][5];
 		for( int i=0;i<5;i++ )
