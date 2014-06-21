@@ -12,9 +12,9 @@ Universidade Federal do ABC
 '''
 
 
-x = int( raw_input("x = ") )
-y = int( raw_input("x = ") )
-z = int( raw_input("x = ") )
+x = float( raw_input("x = ") )
+y = float( raw_input("x = ") )
+z = float( raw_input("x = ") )
 
 if x+y > z and x+z > y and y+z > x:
     if x==y and y==z:

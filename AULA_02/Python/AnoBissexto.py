@@ -12,7 +12,7 @@ Universidade Federal do ABC
 
 ano = float(raw_input("Qual ano? "))
 
-if ano%400 == 0 or (ano%4==0 and ano%100==0):
-    print "É bissexto
+if ano%400 == 0 or (ano%4==0 and ano%100!=0):
+    print "É bissexto"
 else:
     print "Não é bissexto"
