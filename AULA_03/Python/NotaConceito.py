@@ -11,7 +11,7 @@ NotaConceito.py
 '''
 
 limiar = float(raw_input("limiar = "))
-MaFaltas = int(raw_input("MaxFaltas = "))
+MaxFaltas = int(raw_input("MaxFaltas = "))
 alunos  = int(raw_input("alunos = "))
 
 for i in range(1,alunos+1):
