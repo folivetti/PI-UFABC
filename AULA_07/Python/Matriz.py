@@ -36,7 +36,7 @@ y = map(int,f.readline().split(";"))
 f.close()
 
 # C = A+B
-C = [[0]*m1]*n1
+C = [[0]*m1 for _ in range(n1)]
 if n1==n2 and m1==m2:
     for i in range(n1):
         for j in range(m1):
@@ -46,7 +46,7 @@ if n1==n2 and m1==m2:
     fw.close()
 
 # Transposta de A
-T = [[0]*n1]*m1
+T = [[0]*n1 for _ in range(m1)]
 for i in range(n1):
     for j in range(m1):
         T[j][i] = A[i][j]
@@ -55,7 +55,7 @@ print >>fw, T
 fw.close()
 
 # produto externo x e y
-D = [[0]*n4]*n3
+D = [[0]*n4 for _ in range(n3)]
 for i in range(n3):
     for j in range(n4):
         D[i][j] = x[i]*y[j]
