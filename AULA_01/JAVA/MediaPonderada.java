@@ -2,10 +2,6 @@
  * Implementação de algoritmo para cálculo de
  * média aritmética entre dois números com peso w e (1-w) respectivamente.
  * Entrada: double x, y, w
- *
- * Author: Fabrício Olivetti de França
- * Disciplina Processamento da Informação
- * Universidade Federal do ABC
  * Saída: Média m
  */
 
@@ -20,17 +16,19 @@ import java.util.Scanner;  // pedindo permissão para usar a função Scanner
 
 public class MediaPonderada{
 	public static void main( String[] args ){
-		double x,y; // entrada
+		double x,y, w; // entrada
 		double m;   // media
 		Scanner leitor = new Scanner(System.in); // para pegar entrada do usuário
 		System.out.print("Entre com o valor de x:");
 		x = leitor.nextDouble();
 		System.out.print("Entre com o valor de y:");
 		y = leitor.nextDouble();
+		System.out.print("Entre com o valor de w (0<=w<=1): ");
+		w = leitor.nextDouble();
 
-		m = (x+y)/2;
+		m = ( w*x + (1-w)*y ) / 2;
 
-		System.out.println("A média entre "+x+" e "+y+" é: "+m);
+		System.out.println("A média ponderada entre "+x+" e "+y+" é: "+m);
 		
 	}
 }

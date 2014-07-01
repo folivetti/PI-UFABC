@@ -2,10 +2,6 @@
  * Implementação de algoritmo para cálculo da
  * eq. ax^2 + bx + c = 0
  * Entrada: a, b, c (quais os tipos?)
- *
- * Author: Fabrício Olivetti de França
- * Disciplina Processamento da Informação
- * Universidade Federal do ABC
  * Saída: x1, x2 (quais os tipos?)
  */
 
@@ -17,26 +13,28 @@
  * Nesse código isso já foi feito para você!
  */
 
-
-/*
- * Dicas:
- * utilize double para as variaveis
- * use a função Math.sqrt( ) para calcular a raiz quadrada. Ex.:  x = Math.sqrt(y);
- * use a função Math.pow( ) para calcular x^y. Ex.: x = Math.pow(x,2);
- */
-
 import java.util.Scanner;  // pedindo permissão para usar a função Scanner
 
 public class SegundoGrau{
 	public static void main( String[] args ){
-		// declare as variaveis a serem utilizadas
-		// escreva pedindo para o usuário entrar com a, b, c
-		// capture tais valores
-		// calcule o valor de x1
-		// calcule o valor de x2
+		double a,b,c; // declare as variaveis a serem utilizadas
+		double x1, x2;
+		double delta;
+		Scanner leitor = new Scanner(System.in); // para pegar entrada do usuário
+
+		System.out.println("Entre com os valores de a, b e c: "); // escreva pedindo para o usuário entrar com a, b, c
+		a = leitor.nextFloat(); // capture tais valores
+		b = leitor.nextFloat();
+		c = leitor.nextFloat();
+
+		// x = -b +/- raiz(b^2 - 4ac)  / 2a
+		delta = Math.sqrt( Math.pow(b,2) - (4*a*c) );
+
+		x1 = (-b + delta)/(2*a); // calcule o valor de x1
+		x2 = (-b + delta)/(2*a); // calcule o valor de x2
 		// dica: use uma variavel extra para pre-calcular parte da solucao
-		//
-		// imprima na tela
+		
+		System.out.println("As soluções para a eq. = "+x1+ " e " + x2); // imprima na tela
 		
 	}
 }
