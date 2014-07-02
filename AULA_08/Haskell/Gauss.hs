@@ -1,4 +1,3 @@
-
 type Linha = [Float]
 type Matriz = [Linha]
 
