@@ -31,6 +31,9 @@ class Zebra{
 
 	// modela todas as dicas que temos em forma de condições/restrições
 	public static boolean Possivel( int [] num, int [] cor, int [] bebida, int [] comida, int [] animal ){
+		
+		if( num.length > 0 && num[ buscaLista( Nacionalidade, "PERUANO" ) ] != buscaLista( Casa, "UM" ) ) // se a Nacionalidade eh Peruana e a casa nao eh a primeira, entao quebrou a premissa
+			return false;
 	}
 
 	// gera todas as permutações
@@ -71,6 +74,8 @@ class Zebra{
 		for( int i=0;i<lista.size();i++ ){
 			permutacoes[i] = lista.get(i);
 		}
+
+                int [] vazio = new int [0]; // isso representara um vetor de permutacao desconhecida
 
 
 
