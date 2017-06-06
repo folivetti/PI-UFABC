@@ -31,7 +31,7 @@ public class SegundoGrau{
 		delta = Math.sqrt( Math.pow(b,2) - (4*a*c) );
 
 		x1 = (-b + delta)/(2*a); // calcule o valor de x1
-		x2 = (-b + delta)/(2*a); // calcule o valor de x2
+		x2 = (-b - delta)/(2*a); // calcule o valor de x2
 		// dica: use uma variavel extra para pre-calcular parte da solucao
 		
 		System.out.println("As soluções para a eq. = "+x1+ " e " + x2); // imprima na tela
